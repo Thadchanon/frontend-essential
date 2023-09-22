@@ -5,68 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Hello, World!</title>
+    <script src="script.js"></script>
   </head>
   <body>
-    <div>
-      <h1 class="header">Hello, World!</h1>
-      <h2>This is heading 2</h2>
-      <p>This is paragraph</p>
+    <nav>
+      <p>Cleverse Academy</p>
+      <button>Login</button>
+    </nav>
+
+    <h1 class="header">Hello, World!</h1>
+    <h2>This is heading 2</h2>
+    <p>This is paragraph</p>
+
+    <div class="milestone-container">
+      <div class="milestone-card">
+        <!-- * Frontend Milestones -->
+        <h2 class="milestone important">Frontend Milestones!</h2>
+        <ul id="frontend-milestone">
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React</li>
+        </ul>
+        <a href="https://academy.cleverse.com/detail">view couse info</a>
+      </div>
+      <div class="milestone-card">
+        <!-- * Backend Milestones -->
+        <h2 class="milestone">Backend Milestones!</h2>
+        <ul id="backend-milestone">
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Database</li>
+          <li>Docker</li>
+        </ul>
+        <a href="https://academy.cleverse.com/detail">view couse info</a>
+      </div>
     </div>
     <hr />
 
-    <div class="milestone-card">
-      <!-- * Frontend Milestones -->
-      <h2 class="milestone important">Frontend Milestones!</h2>
-      <ul>
-        <li>Javascript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React</li>
-      </ul>
-      <a href="https://academy.cleverse.com/detail">view couse info</a>
-    </div>
-
-    <div class="milestone-card">
-      <!-- * Backend Milestones -->
-      <h2 class="milestone">Backend Milestones!</h2>
-      <ul>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>Database</li>
-        <li>Docker</li>
-      </ul>
-      <a href="https://academy.cleverse.com/detail">view couse info</a>
-    </div>
-    <br />
-    <hr />
-
-    <div class="input-card">
-      <h2>Login</h2>
-      <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" />
-        <br /><br />
-        <label for="password">Password:</label>
-        <input type="password" id="password" />
-        <br /><br />
-        <input type="submit" value="Login" />
-      </form>
-    </div>
-
-    <div class="input-card">
-      <h2>Register</h2>
-      <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" />
-        <br /><br />
-        <label for="password">Password:</label>
-        <input type="password" id="password" />
-        <br /><br />
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" />
-        <br /><br />
-        <input type="submit" />
-      </form>
+    <div class="input-container">
+      <div class="input-card">
+        <h2>Front-end Milestone</h2>
+        <form>
+          <br /><br />
+          <label for="frontend">Add Front-end Milestone:</label>
+          <input type="text" id="frontend" />
+          <br /><br />
+          <button id="add-front">Submit</button>
+        </form>
+      </div>
+      <div class="input-card">
+        <h2>Back-end Milestone</h2>
+        <form>
+          <br /><br />
+          <label for="backend">Add Back-end Milestone:</label>
+          <input type="add-back" id="backend" />
+          <br /><br />
+          <button id="add-back">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

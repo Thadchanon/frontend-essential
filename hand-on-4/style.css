@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  background-color: #eee;
+}
+
+.hamburger-icon {
+  display: none;
+  width: 40px;
+}
+
+.stick {
+  position: sticky;
+  top: 0;
+}
+
+.main-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  justify-content: center;
+  padding: 0px 145px 0px 160px;
+}
+
+.nav-menu-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.nav-menu-left {
+  font-size: 17px;
+  padding: 10px 30px;
+}
+
+.nav-menu-left a {
+  padding: 10px 10px 5px;
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-menu-right {
+  font-size: 16px;
+  padding: 10px 50px;
+}
+
+.nav-menu-right a {
+  padding: 10px 10px 5px;
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-tools-container {
+  display: flex;
+}
+
+.search-tool {
+  padding: 0px 10px;
+}
+
+.top-bar-container {
+  background-color: black;
+  padding: 8px 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.top-bar-container p {
+  font-size: 21px;
+  color: white;
+}
+
+.top-bar {
+  padding: 7px 0px 0px 45px;
+  width: 70%;
+}
+
+.slide-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://store.nvidia.com/assets/images/carousel/shield-full-family-launch-wmfg-1360x300.jpg);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin: 36px auto 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* * Section */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 26px;
+}
+
+section > p {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* * Item */
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: max-content;
+  gap: 16px;
+}
+
+.item {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title + p {
+  font-size: 16px;
+}
+
+.shop-all a {
+  text-decoration: none;
+  color: black;
+}
+
+.shop-all {
+  text-align: center;
+}
+
+.slide {
+  color: white;
+  padding: 7px 0px 0px 60px;
+  width: 70%;
+}
+
+.slide h1 {
+  font-size: 45px;
+}
+
+.slide h3 {
+  font-size: 25px;
+  margin: 34px 0px 34px 0px;
+}
+
+.slide-botton {
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  font-family: "Play", sans-serif;
+  background-color: #76b900;
+}
+
+@media (max-width: 1080px) {
+  .items-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1080px) {
+  .items-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 748px) {
+  .items-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hamburger-icon {
+    display: inline-block;
+  }
+
+  .search-tool {
+    display: none;
+  }
+
+  .profile-tool {
+    display: none;
+  }
+
+  .nav-menu-container {
+    display: none;
+  }
+
+  .main-header {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .top-bar-container {
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .top-bar {
+    padding: 0px 0px;
+  }
+
+  .slide-container {
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .slide {
+    padding: 0px 0px 0px 10px;
+  }
+}

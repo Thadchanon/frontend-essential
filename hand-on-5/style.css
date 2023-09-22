@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+}
+
+input {
+  font-family: "Kanit", sans-serif;
+  width: 400px;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #6d7a80;
+}
+
+button {
+  background-color: #8caba1;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #6d7a80;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #08141e;
+  color: white;
+  padding: 20px 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #0f2a3f;
+}
+
+.to-do-list-text {
+  margin: 10px 5px;
+}
+
+.add-botton {
+  margin: 10px 5px;
+}
+
+.main-list {
+  color: white;
+  width: 100%;
+  background-color: #8caba1;
+}
+
+.list-container {
+  width: 35%;
+  margin: 0px auto;
+  display: flex;
+}
+
+.line-through {
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+.item {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-P {
+  margin: 20px;
+}
+
+.del-button {
+  height: 30px;
+}
+
+#to-do-list {
+  padding: 0;
+  width: 100%;
+}
